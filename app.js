@@ -50,7 +50,7 @@ checkIcon.addEventListener('click', function() {
             incomeListItem.classList.add('class-list_item');
             const deleteItem = document.createElement('img');
             deleteItem.classList.add('income_delete-icon');
-            deleteItem.setAttribute('src', "./assets/incomeDelete.svg");
+            deleteItem.setAttribute('src', "./incomeDelete.svg");
             incomeListItem.appendChild(incomeAmountTitle);
             incomeListItem.appendChild(incomeAmountValue);
             incomeListItem.appendChild(deleteItem);
@@ -88,7 +88,7 @@ checkIcon.addEventListener('click', function() {
             incomeListItem.classList.add('class-list_item__2');
             const deleteItem = document.createElement('img');
             deleteItem.classList.add('expense_delete-icon');
-            deleteItem.setAttribute('src', "./assets/incomeDelete.svg");
+            deleteItem.setAttribute('src', "./incomeDelete.svg");
             incomeListItem.appendChild(expenseAmountTitle);
             incomeListItem.appendChild(expenseAmountValue);
             incomeListItem.appendChild(deleteItem);
