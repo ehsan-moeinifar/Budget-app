@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>budget App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="board">
+        <h1 class="page_title"></h1>
+        <p class="budget"></p>
+        <div class="income">
+            <p class="income_text">INCOME</p>
+            <p class="income_amount"></p>  
+        </div>
+        <div class="expense">
+            <p class="expense_text">EXPENSES</p>
+            <div class="expense_div">
+                <p class="expense_amount"></p> 
+                <span class="expense_percentage"></span> 
+            </div>
+        </div>
+    </div>
+    <div class="calculation">
+        <div class="inputs">
+            <select name="add" class="add_type" id="add_type">
+                <option value="+">+</option>
+                <option value="-">-</option>
+            </select>
+            <input type="text" class="money_title" placeholder="Add description">
+            <input type="number" class="money_value" placeholder="Value" min="0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="check_icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+        </div>
+        <div class="lists">
+            <div class="income_box">
+                <p class="list_income--title">INCOME</p>
+                <div class="income_list"></div>
+            </div>
+            <div class="expenses_box">
+                <p class="list_expense--title">EXPENSES</p>
+                <div class="expense_list"></div>
+            </div>
+        </div>
+    </div>
+<script src="./app.js"></script>
+</body>
+</html>

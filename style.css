@@ -1,0 +1,169 @@
+body{
+    box-sizing: border-box;
+}
+.board{
+    background-image: url(./assets/back.png);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.income{
+    background-color: #28B9B5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px;
+    height: 45px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.income_amount{
+    color: #f7f7f7;
+}
+.expense_amount{
+    color: #f7f7f7;
+}
+.expense{
+    background-color: #FF5049;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px;
+    height: 45px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.budget{
+    color: #f7f7f7;
+    font-size: 30px;
+    width: 250px;
+    height: 45px;
+    text-align: center;
+}
+.inputs{
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.check_icon{
+    width: 45px;
+    height: 45px;
+    margin-left: 20px;
+    color: #28B9B5;
+    cursor: pointer;
+}
+.uncheck_icon{
+    width: 45px;
+    height: 45px;
+    margin-left: 20px;
+    color: #FF5049;
+    cursor: pointer;
+}
+.money_title{
+    margin-left: 30px;
+    width: 400px;
+    height: 45px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 5px;
+}
+.money_value{
+    margin-left: 20px;
+    width: 100px;
+    height: 45px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 5px;
+}
+.add_type{
+    width: 55px;
+    height: 45px;
+    font-size: medium;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.lists{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.income_box{
+    width: 400px;
+    height: 40px;
+}
+.expenses_box{
+    width: 400px;
+    height: 40px;
+}
+.list_income--title{
+    color: #28B9B5;
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 10px;
+}
+.list_expense--title{
+    color: #FF5049;
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 10px;
+}
+.class-list_item__title{
+    color: gray;
+}
+.class-list_item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #28B9B5;
+    height: 40px;
+    border-bottom: 1px solid lightgrey;
+}
+.class-list_item__2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #FF5049;
+    height: 40px;
+    border-bottom: 1px solid lightgrey;
+}
+.green-hover:hover {
+    outline: 2px solid #28B9B5;
+}
+.green-hover::selection{
+    outline: 2px solid #28B9B5;
+}
+.red-hover:hover {
+    outline: 2px solid #FF5049;
+}
+.red-hover::selection{
+    outline: 2px solid #FF5049;
+}
+.income_delete-icon{
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    color: #28B9B5;
+    cursor: pointer;
+    display: none;
+}
+.expense_delete-icon{
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    color: #FF5049;
+    cursor: pointer;
+    display: none;
+}
+.class-list_item:hover .income_delete-icon{
+    display: inline;
+}
+.class-list_item__2:hover .expense_delete-icon{
+    display: inline;
+}
